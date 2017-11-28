@@ -62,6 +62,7 @@
 		0A988D861FCD527F008DE16F /* RollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollView.swift; sourceTree = "<group>"; };
 		0A988D881FCD5291008DE16F /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		0A988D8A1FCD5531008DE16F /* AdapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterView.swift; sourceTree = "<group>"; };
+		0A988D8C1FCD570D008DE16F /* RollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RollView.xib; sourceTree = "<group>"; };
 		OBJ_12 /* RollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"RollView::RollView::Product" /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,9 +157,10 @@
 		OBJ_8 /* RollView */ = {
 			isa = PBXGroup;
 			children = (
-				0A988D861FCD527F008DE16F /* RollView.swift */,
 				0A988D881FCD5291008DE16F /* Adapter.swift */,
 				0A988D8A1FCD5531008DE16F /* AdapterView.swift */,
+				0A988D861FCD527F008DE16F /* RollView.swift */,
+				0A988D8C1FCD570D008DE16F /* RollView.xib */,
 			);
 			name = RollView;
 			path = Sources/RollView;
