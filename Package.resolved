@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Pooling",
+        "repositoryURL": "https://github.com/gitvalue/Pooling.git",
+        "state": {
+          "branch": null,
+          "revision": "cd08a0b3c8bbb3292979ba9d4be87c97fdfe46aa",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
