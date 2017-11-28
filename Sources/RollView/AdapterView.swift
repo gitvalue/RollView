@@ -1,5 +1,5 @@
 //
-//  RollView.swift
+//  AdapterView.swift
 //  Adapter
 //
 //  Created by Dmitry Volosach on 28.11.2017
@@ -17,15 +17,13 @@
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
 //  IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 
-import UIKit
+import Foundation
 
 /**
- Renders vertically scrolling collection of views, where each
- view lays right below previous one from list.
+ An AdapterView is a view whose children are determined by an Adapter
  
  - author: gitvalue
  */
-class RollView: UIView, AdapterView {
-    var adapter: Adapter!
-    
+public protocol AdapterView {
+    var adapter: Adapter! { get set }
 }

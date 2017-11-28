@@ -26,7 +26,7 @@ import UIKit
  
  - author: gitvalue
  */
-protocol Adapter {
+public protocol Adapter {
     /**
      Number of elements in dataset
      */

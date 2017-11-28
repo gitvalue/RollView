@@ -28,6 +28,7 @@
 		0A988D811FCD4FE4008DE16F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A988D7F1FCD4FE4008DE16F /* LaunchScreen.storyboard */; };
 		0A988D871FCD527F008DE16F /* RollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D861FCD527F008DE16F /* RollView.swift */; };
 		0A988D891FCD5291008DE16F /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D881FCD5291008DE16F /* Adapter.swift */; };
+		0A988D8B1FCD5531008DE16F /* AdapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D8A1FCD5531008DE16F /* AdapterView.swift */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_27 /* RollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RollViewTests.swift */; };
 		OBJ_29 /* RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RollView::RollView::Product" /* RollView.framework */; };
@@ -60,6 +61,7 @@
 		0A988D821FCD4FE4008DE16F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A988D861FCD527F008DE16F /* RollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollView.swift; sourceTree = "<group>"; };
 		0A988D881FCD5291008DE16F /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
+		0A988D8A1FCD5531008DE16F /* AdapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterView.swift; sourceTree = "<group>"; };
 		OBJ_12 /* RollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"RollView::RollView::Product" /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 			children = (
 				0A988D861FCD527F008DE16F /* RollView.swift */,
 				0A988D881FCD5291008DE16F /* Adapter.swift */,
+				0A988D8A1FCD5531008DE16F /* AdapterView.swift */,
 			);
 			name = RollView;
 			path = Sources/RollView;
@@ -313,6 +316,7 @@
 			files = (
 				0A988D871FCD527F008DE16F /* RollView.swift in Sources */,
 				0A988D891FCD5291008DE16F /* Adapter.swift in Sources */,
+				0A988D8B1FCD5531008DE16F /* AdapterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
