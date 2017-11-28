@@ -92,7 +92,7 @@ To integrate RollView into your Xcode project using Carthage, specify it in your
 github "https://github.com/gitvalue/RollView" ~> 1.0.0
 ```
 
-Run `carthage update` to build the framework and drag the built `RollView` into your Xcode project.
+Run `carthage update --platform iOS` to build the framework and drag the built `RollView` into your Xcode project.
 
 For more information read [this](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application)
 
