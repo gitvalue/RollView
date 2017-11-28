@@ -4,10 +4,12 @@ def pods
     pod 'Pooling', '~> 1.0'
 end
 
-# target 'Example-iOS' do
-#   use_frameworks!
+target 'Example-iOS' do
+  use_frameworks!
 
-# end
+  pod 'RollView', :path => './'
+
+end
 
 target 'RollView' do
   use_frameworks!

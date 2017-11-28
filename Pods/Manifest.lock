@@ -1,12 +1,20 @@
 PODS:
   - Pooling (1.0.0)
+  - RollView (0.0.1):
+    - Pooling (~> 1.0)
 
 DEPENDENCIES:
   - Pooling (~> 1.0)
+  - RollView (from `./`)
+
+EXTERNAL SOURCES:
+  RollView:
+    :path: ./
 
 SPEC CHECKSUMS:
   Pooling: a40e0973efbdb02f4626b07b6d7e4f53e61f8e89
+  RollView: 14c97220af98101053afa1b65b8e168f0174fbe1
 
-PODFILE CHECKSUM: 694041667b3f7500635efd69e702d6846117c630
+PODFILE CHECKSUM: c547e3a5535e90b37e72665dfd9e86d1a04ead1d
 
 COCOAPODS: 1.3.1

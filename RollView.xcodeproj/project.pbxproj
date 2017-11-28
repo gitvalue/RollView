@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		"RollView::RollViewPackageTests::ProductTarget" /* RollViewPackageTests */ = {
+		RollView::RollViewPackageTests::ProductTarget /* RollViewPackageTests */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = OBJ_39 /* Build configuration list for PBXAggregateTarget "RollViewPackageTests" */;
 			buildPhases = (
@@ -31,9 +31,10 @@
 		0A988D8B1FCD5531008DE16F /* AdapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D8A1FCD5531008DE16F /* AdapterView.swift */; };
 		0AE12B451FCD5F7B00AF8AAB /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE12B441FCD5F7B00AF8AAB /* ContainerView.swift */; };
 		489FF5A35BD6B60D0AC8C166 /* Pods_RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F9785B9FBD986D6DAD8588 /* Pods_RollView.framework */; };
+		9BC2105F93438223ED6F3A8A /* Pods_Example_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00F3BCA4BB7391B394D5E11 /* Pods_Example_iOS.framework */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_27 /* RollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RollViewTests.swift */; };
-		OBJ_29 /* RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RollView::RollView::Product" /* RollView.framework */; };
+		OBJ_29 /* RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = RollView::RollView::Product /* RollView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,10 +70,13 @@
 		0AE12B441FCD5F7B00AF8AAB /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		75F9785B9FBD986D6DAD8588 /* Pods_RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E57C08C0135B35B2326DF6B /* Pods-RollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RollView/Pods-RollView.release.xcconfig"; sourceTree = "<group>"; };
+		A00F3BCA4BB7391B394D5E11 /* Pods_Example_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDB2582E42DCAA08DFFB2483 /* Pods-Example-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		F4986286D8AE151DDE9CB5CB /* Pods-Example-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		OBJ_12 /* RollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		"RollView::RollView::Product" /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"RollView::RollViewTests::Product" /* RollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		RollView::RollView::Product /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		RollView::RollViewTests::Product /* RollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC2105F93438223ED6F3A8A /* Pods_Example_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,6 +132,8 @@
 			children = (
 				020032995E35385177BD5E94 /* Pods-RollView.debug.xcconfig */,
 				7E57C08C0135B35B2326DF6B /* Pods-RollView.release.xcconfig */,
+				BDB2582E42DCAA08DFFB2483 /* Pods-Example-iOS.debug.xcconfig */,
+				F4986286D8AE151DDE9CB5CB /* Pods-Example-iOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				75F9785B9FBD986D6DAD8588 /* Pods_RollView.framework */,
+				A00F3BCA4BB7391B394D5E11 /* Pods_Example_iOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,8 +167,8 @@
 		OBJ_13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				"RollView::RollViewTests::Product" /* RollViewTests.xctest */,
-				"RollView::RollView::Product" /* RollView.framework */,
+				RollView::RollViewTests::Product /* RollViewTests.xctest */,
+				RollView::RollView::Product /* RollView.framework */,
 				0A988D741FCD4FE4008DE16F /* Example-iOS.app */,
 			);
 			name = Products;
@@ -207,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A988D831FCD4FE4008DE16F /* Build configuration list for PBXNativeTarget "Example-iOS" */;
 			buildPhases = (
+				4A394EAFD5EE8735A6CB0932 /* [CP] Check Pods Manifest.lock */,
 				0A988D701FCD4FE4008DE16F /* Sources */,
 				0A988D711FCD4FE4008DE16F /* Frameworks */,
 				0A988D721FCD4FE4008DE16F /* Resources */,
+				2612B687EBFB13130ACC1B12 /* [CP] Embed Pods Frameworks */,
+				9AA758F23F05D6DE18C0AE64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,7 +231,7 @@
 			productReference = 0A988D741FCD4FE4008DE16F /* Example-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		"RollView::RollView" /* RollView */ = {
+		RollView::RollView /* RollView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "RollView" */;
 			buildPhases = (
@@ -235,10 +246,10 @@
 			);
 			name = RollView;
 			productName = RollView;
-			productReference = "RollView::RollView::Product" /* RollView.framework */;
+			productReference = RollView::RollView::Product /* RollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"RollView::RollViewTests" /* RollViewTests */ = {
+		RollView::RollViewTests /* RollViewTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "RollViewTests" */;
 			buildPhases = (
@@ -252,10 +263,10 @@
 			);
 			name = RollViewTests;
 			productName = RollViewTests;
-			productReference = "RollView::RollViewTests::Product" /* RollViewTests.xctest */;
+			productReference = RollView::RollViewTests::Product /* RollViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		"RollView::SwiftPMPackageDescription" /* RollViewPackageDescription */ = {
+		RollView::SwiftPMPackageDescription /* RollViewPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_17 /* Build configuration list for PBXNativeTarget "RollViewPackageDescription" */;
 			buildPhases = (
@@ -301,10 +312,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				"RollView::SwiftPMPackageDescription" /* RollViewPackageDescription */,
-				"RollView::RollViewTests" /* RollViewTests */,
-				"RollView::RollView" /* RollView */,
-				"RollView::RollViewPackageTests::ProductTarget" /* RollViewPackageTests */,
+				RollView::SwiftPMPackageDescription /* RollViewPackageDescription */,
+				RollView::RollViewTests /* RollViewTests */,
+				RollView::RollView /* RollView */,
+				RollView::RollViewPackageTests::ProductTarget /* RollViewPackageTests */,
 				0A988D731FCD4FE4008DE16F /* Example-iOS */,
 			);
 		};
@@ -340,6 +351,59 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2612B687EBFB13130ACC1B12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Pooling/Pooling.framework",
+				"${BUILT_PRODUCTS_DIR}/RollView/RollView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pooling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RollView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A394EAFD5EE8735A6CB0932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9AA758F23F05D6DE18C0AE64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D42593AF439FE0AC8C0606D5 /* [CP] Copy Pods Resources */ = {
@@ -401,12 +465,12 @@
 /* Begin PBXTargetDependency section */
 		OBJ_30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "RollView::RollView" /* RollView */;
+			target = RollView::RollView /* RollView */;
 			targetProxy = 0ADC5CFF1FCD4B04004ADD7B /* PBXContainerItemProxy */;
 		};
 		OBJ_42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "RollView::RollViewTests" /* RollViewTests */;
+			target = RollView::RollViewTests /* RollViewTests */;
 			targetProxy = 0ADC5D001FCD4B05004ADD7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -433,6 +497,7 @@
 /* Begin XCBuildConfiguration section */
 		0A988D841FCD4FE4008DE16F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDB2582E42DCAA08DFFB2483 /* Pods-Example-iOS.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -478,7 +543,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Example-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "intervain.Example-iOS";
@@ -492,6 +557,7 @@
 		};
 		0A988D851FCD4FE4008DE16F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4986286D8AE151DDE9CB5CB /* Pods-Example-iOS.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -533,7 +599,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = "Example-iOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "intervain.Example-iOS";

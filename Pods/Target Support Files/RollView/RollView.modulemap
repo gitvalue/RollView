@@ -1,0 +1,6 @@
+framework module RollView {
+  umbrella header "RollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

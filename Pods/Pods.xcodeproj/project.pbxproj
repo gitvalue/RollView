@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1276E8C70E96D82156CD75FBC6F02994 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		2FE4561D7452A62F070FEBC2C37A5B73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8384D8B0A01EEB8199FFDAC0EB0D27B1 /* Pods-RollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51B43CD7D8FEC5A3C3B8EF1C51A19A7F /* Pods-RollView-dummy.m */; };
-		8B6993806ACF4D884845196BC6CDBA10 /* Pooling-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67F1AFE4333111D798CC56BA2A41F2C /* Pooling-dummy.m */; };
-		9B054F7F1F5372E87D3BCCBD87DF1334 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A23BC84228B0A93F6D2F19C3512B4 /* Pool.swift */; };
-		9E0A500C826D799071324837BE5EDC0A /* PThreadMutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB9EB97F3016A677423C133C21940E /* PThreadMutex.swift */; };
-		C1AFC0A48E5E37F028CB9546E8E77723 /* Pooling-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 969F7E801017E9C1F57267B297007ACC /* Pooling-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD8F264D25ABE7481BA8E8B87A76C162 /* Pooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF31AFEAB6FEE7B68F0C967901B783 /* Pooling.swift */; };
-		D753B75D52EDD5A1F77BE493F47B0BE0 /* Pods-RollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1357DCFD44F9C7BA2D501F3471E99D08 /* Pods-RollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2293515B0F7690772FEEA8C4136653BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E63AAF479C377B99D2AB79F7715CC6 /* Foundation.framework */; };
+		265D80363A1FAE61BF64A20526E0E2DC /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AC262AB77FEEB404AD6E6E5B99FE33E /* Adapter.swift */; };
+		2D8AA4CE819C03017E40D2534161ADE4 /* Pooling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AF31AFEAB6FEE7B68F0C967901B783 /* Pooling.swift */; };
+		2FE4561D7452A62F070FEBC2C37A5B73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E63AAF479C377B99D2AB79F7715CC6 /* Foundation.framework */; };
+		50D5028D0A9F6B19ADCB39BF7FF715DA /* RollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0907690BD9BCD2E3451F0EDEBE32AC2 /* RollView-dummy.m */; };
+		5279FFAC48285F51AD44D7F73F65DC9C /* RollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 54A4E915C8E199EE27F2C78EC8D61FE1 /* RollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		678EB9D848301A8E709152F5AA9EBC3C /* Pooling.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C990A0ED6F9F285D64C8C597BD2A83D /* Pooling.framework */; };
+		6EB9C34FB5AAEB1D083702534FF1C01E /* Pooling-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67F1AFE4333111D798CC56BA2A41F2C /* Pooling-dummy.m */; };
+		7B23C7EE8C6DE38728A258AAB9C08427 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3860ECD4A9D86E2547CB9B78ABB471C /* ContainerView.swift */; };
+		8384D8B0A01EEB8199FFDAC0EB0D27B1 /* Pods-RollView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 747B0D16FF7CE7E497356511D0B91C41 /* Pods-RollView-dummy.m */; };
+		95F2BCCD700096A0F6F63C98A971E932 /* AdapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7444C3C15D3698E72CC0D81FE357E4B0 /* AdapterView.swift */; };
+		A067F63082C46CD6C5B950784F3F4C41 /* Pods-Example-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F38CCD2D04D516722062E64B131C9814 /* Pods-Example-iOS-dummy.m */; };
+		A7671F44DA52416D0CDAEE3D4CE69498 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E63AAF479C377B99D2AB79F7715CC6 /* Foundation.framework */; };
+		BBBCC3054F623AE5DE7A039652363D6C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E63AAF479C377B99D2AB79F7715CC6 /* Foundation.framework */; };
+		C393C39A6EC978CDEBDAE206E967CD6C /* Pods-Example-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1FF3D9450510764D4197133CFB31ED3 /* Pods-Example-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7999F411B13869C06BF9B6BBA4B24CF /* PThreadMutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB9EB97F3016A677423C133C21940E /* PThreadMutex.swift */; };
+		D504193E6E8CFFA91239CA3744BA45AC /* Pooling-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 969F7E801017E9C1F57267B297007ACC /* Pooling-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5A212C54AE798C479AB9E131016B1A5 /* RollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688CD0B1DBC5C9A13A4E59B1FECDD92B /* RollView.swift */; };
+		D753B75D52EDD5A1F77BE493F47B0BE0 /* Pods-RollView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 19BCC2E5651BD0AFEBC43D3F2E1A8836 /* Pods-RollView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F196DE72233718901F5C9FC1070BE363 /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75A23BC84228B0A93F6D2F19C3512B4 /* Pool.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,37 +34,89 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 56547D8DE4D1AB4AEA52A66EFAF48383;
+			remoteGlobalIDString = B686D9254FF09A107AF3D75B65566E64;
 			remoteInfo = Pooling;
+		};
+		5A939E835CCACFB90729835152CDD955 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B686D9254FF09A107AF3D75B65566E64;
+			remoteInfo = Pooling;
+		};
+		9A5D3CE2C50532D305E9A2DB5218308D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B686D9254FF09A107AF3D75B65566E64;
+			remoteInfo = Pooling;
+		};
+		E17FEC5D46C1BF9582EE1482C06A5A0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C0218C072DAC4D31973C94E7133546;
+			remoteInfo = RollView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1357DCFD44F9C7BA2D501F3471E99D08 /* Pods-RollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RollView-umbrella.h"; sourceTree = "<group>"; };
+		0B272F44194ADE7DCDCCB610155A7962 /* Pods_Example_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Example_iOS.framework; path = "Pods-Example-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0BC044A6D62AC5EBB07E8D3C7FA8ED44 /* Pods-RollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RollView.debug.xcconfig"; sourceTree = "<group>"; };
+		19BCC2E5651BD0AFEBC43D3F2E1A8836 /* Pods-RollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RollView-umbrella.h"; sourceTree = "<group>"; };
+		1AC262AB77FEEB404AD6E6E5B99FE33E /* Adapter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Adapter.swift; path = Sources/RollView/Adapter.swift; sourceTree = "<group>"; };
 		25C04AC9CF1290D609F5BD80830132E9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CD6FE18EE9403EA7CB8DB7886E91152 /* Pods-RollView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RollView-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3351699A4506F9059B5CA336AB14F565 /* Pods-RollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RollView.debug.xcconfig"; sourceTree = "<group>"; };
-		46F287E16C9E0C9B3F15905DEE7930AB /* Pods-RollView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RollView-acknowledgements.plist"; sourceTree = "<group>"; };
+		33F348AF72B76E95EA726F77B30D9508 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		375A41C62A3404ABABC7E8C3F5A0B2AC /* Pooling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pooling.framework; path = Pooling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40204BA1EE5C9BDEBA3DAB8AF2B1B41A /* Pods-Example-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		463D8A41D200BB7C9E6287EA58D3EFB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		472162184242A7678A9BEE854A18620A /* Pooling.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Pooling.modulemap; sourceTree = "<group>"; };
-		51B43CD7D8FEC5A3C3B8EF1C51A19A7F /* Pods-RollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RollView-dummy.m"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4C990A0ED6F9F285D64C8C597BD2A83D /* Pooling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pooling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D343FE1EC53089BE43A221313BE3BCD /* Pods-RollView-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RollView-acknowledgements.plist"; sourceTree = "<group>"; };
+		51BDDE282306FDC139926E9BD06F3F50 /* Pods-RollView-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RollView-acknowledgements.markdown"; sourceTree = "<group>"; };
+		54A4E915C8E199EE27F2C78EC8D61FE1 /* RollView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RollView-umbrella.h"; sourceTree = "<group>"; };
+		5D7AF92D25DBF9FC28DBF8E072C27A77 /* Pods-Example-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Example-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		623C6D9E53DA9E028F4F2DF96A9BB5FA /* Pods-RollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RollView.modulemap"; sourceTree = "<group>"; };
+		688CD0B1DBC5C9A13A4E59B1FECDD92B /* RollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RollView.swift; path = Sources/RollView/RollView.swift; sourceTree = "<group>"; };
+		6BB4BB8928ED7D75B79721673252C2A6 /* Pods-Example-iOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Example-iOS-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7444C3C15D3698E72CC0D81FE357E4B0 /* AdapterView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AdapterView.swift; path = Sources/RollView/AdapterView.swift; sourceTree = "<group>"; };
+		747B0D16FF7CE7E497356511D0B91C41 /* Pods-RollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RollView-dummy.m"; sourceTree = "<group>"; };
 		75AF31AFEAB6FEE7B68F0C967901B783 /* Pooling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pooling.swift; path = Sources/Pooling/Pooling.swift; sourceTree = "<group>"; };
-		7C50B6AEA01AB0C449C95F1C0AC19B72 /* Pods-RollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RollView.modulemap"; sourceTree = "<group>"; };
+		85F22FA4C6AA99D47A0550177EDBCB11 /* RollView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RollView-prefix.pch"; sourceTree = "<group>"; };
+		86B65D2B743AB403B6EE1D12A24D0C92 /* Pods-Example-iOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-iOS-frameworks.sh"; sourceTree = "<group>"; };
+		8803A99EC4C3091536037C624664AB4A /* Pods-Example-iOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Example-iOS-acknowledgements.plist"; sourceTree = "<group>"; };
 		8EDB9EB97F3016A677423C133C21940E /* PThreadMutex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PThreadMutex.swift; path = Sources/Pooling/PThreadMutex.swift; sourceTree = "<group>"; };
-		9376B3B58DD846A635F595DED387FBB1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		969F7E801017E9C1F57267B297007ACC /* Pooling-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pooling-umbrella.h"; sourceTree = "<group>"; };
-		BC720F06895ECFE03CD0BDB727C13BF3 /* Pods-RollView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RollView-resources.sh"; sourceTree = "<group>"; };
-		C0667A8C9CBCE285BBB93E67C82A5C4E /* Pods_RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RollView.framework; path = "Pods-RollView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9708C7390BF58D73B6EAD0DD15756B6C /* RollView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RollView.xcconfig; sourceTree = "<group>"; };
+		A9AB17425A8570C60806DF6B734CF01A /* Pods-Example-iOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Example-iOS-resources.sh"; sourceTree = "<group>"; };
+		B3860ECD4A9D86E2547CB9B78ABB471C /* ContainerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerView.swift; path = Sources/RollView/ContainerView.swift; sourceTree = "<group>"; };
 		C67F1AFE4333111D798CC56BA2A41F2C /* Pooling-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pooling-dummy.m"; sourceTree = "<group>"; };
 		CE085DCA49CCCA5734DC937DD93CA0E4 /* Pooling.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pooling.xcconfig; sourceTree = "<group>"; };
 		D52AE3225B6D7D6075DCCA05BFBFE631 /* Pooling-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pooling-prefix.pch"; sourceTree = "<group>"; };
 		D75A23BC84228B0A93F6D2F19C3512B4 /* Pool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pool.swift; path = Sources/Pooling/Pool.swift; sourceTree = "<group>"; };
-		EF91015372547A2E39D5D49A4602FDDA /* Pooling.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pooling.framework; path = Pooling.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FA263DB2626E0B21D0B98825B9B352AE /* Pods-RollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RollView.release.xcconfig"; sourceTree = "<group>"; };
+		D8E63AAF479C377B99D2AB79F7715CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9578ABEE13081072A5E68D714239213 /* Pods-Example-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Example-iOS.modulemap"; sourceTree = "<group>"; };
+		DA187270F14A0DC914A8687BA642CCC9 /* Pods-RollView-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RollView-resources.sh"; sourceTree = "<group>"; };
+		E0907690BD9BCD2E3451F0EDEBE32AC2 /* RollView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RollView-dummy.m"; sourceTree = "<group>"; };
+		E0BB4388A0863B7C780CDCB0CB1DAF84 /* Pods-RollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RollView.release.xcconfig"; sourceTree = "<group>"; };
+		E1FF3D9450510764D4197133CFB31ED3 /* Pods-Example-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Example-iOS-umbrella.h"; sourceTree = "<group>"; };
+		E2BE595AE2159E25A00B880D9F1D2610 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E363747EA822F3FA7E8E2490216B6546 /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RollView.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6CC5B4B60C938DF0ED9F817EB781087 /* RollView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RollView.modulemap; sourceTree = "<group>"; };
+		F38CCD2D04D516722062E64B131C9814 /* Pods-Example-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Example-iOS-dummy.m"; sourceTree = "<group>"; };
+		F89CC8617E490DA6A4012C9135B09F9C /* Pods_RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RollView.framework; path = "Pods-RollView.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2CFAFE6FE81D3CE7E4BD968DD0FD477D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2293515B0F7690772FEEA8C4136653BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7551E81376B84B3A164D7A9059EF9800 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -62,43 +125,109 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E70E3E74B2B7164A5BF1B8F1845A5126 /* Frameworks */ = {
+		CA121C013AA72128F4A525922CB31364 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1276E8C70E96D82156CD75FBC6F02994 /* Foundation.framework in Frameworks */,
+				A7671F44DA52416D0CDAEE3D4CE69498 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F1EC6EB70E62EF9BD74469F6093131 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBBCC3054F623AE5DE7A039652363D6C /* Foundation.framework in Frameworks */,
+				678EB9D848301A8E709152F5AA9EBC3C /* Pooling.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4723C08F2767128435DF6B0637A1CC95 /* Pods-RollView */ = {
+		0AAABCB50868337D1A9E12724257B088 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9376B3B58DD846A635F595DED387FBB1 /* Info.plist */,
-				7C50B6AEA01AB0C449C95F1C0AC19B72 /* Pods-RollView.modulemap */,
-				2CD6FE18EE9403EA7CB8DB7886E91152 /* Pods-RollView-acknowledgements.markdown */,
-				46F287E16C9E0C9B3F15905DEE7930AB /* Pods-RollView-acknowledgements.plist */,
-				51B43CD7D8FEC5A3C3B8EF1C51A19A7F /* Pods-RollView-dummy.m */,
-				BC720F06895ECFE03CD0BDB727C13BF3 /* Pods-RollView-resources.sh */,
-				1357DCFD44F9C7BA2D501F3471E99D08 /* Pods-RollView-umbrella.h */,
-				3351699A4506F9059B5CA336AB14F565 /* Pods-RollView.debug.xcconfig */,
-				FA263DB2626E0B21D0B98825B9B352AE /* Pods-RollView.release.xcconfig */,
+				E2BE595AE2159E25A00B880D9F1D2610 /* Info.plist */,
+				E6CC5B4B60C938DF0ED9F817EB781087 /* RollView.modulemap */,
+				9708C7390BF58D73B6EAD0DD15756B6C /* RollView.xcconfig */,
+				E0907690BD9BCD2E3451F0EDEBE32AC2 /* RollView-dummy.m */,
+				85F22FA4C6AA99D47A0550177EDBCB11 /* RollView-prefix.pch */,
+				54A4E915C8E199EE27F2C78EC8D61FE1 /* RollView-umbrella.h */,
 			);
-			name = "Pods-RollView";
-			path = "Target Support Files/Pods-RollView";
+			name = "Support Files";
+			path = "Pods/Target Support Files/RollView";
+			sourceTree = "<group>";
+		};
+		0ADC52B2494423D860B8148F3D38DC7B /* RollView */ = {
+			isa = PBXGroup;
+			children = (
+				1AC262AB77FEEB404AD6E6E5B99FE33E /* Adapter.swift */,
+				7444C3C15D3698E72CC0D81FE357E4B0 /* AdapterView.swift */,
+				B3860ECD4A9D86E2547CB9B78ABB471C /* ContainerView.swift */,
+				688CD0B1DBC5C9A13A4E59B1FECDD92B /* RollView.swift */,
+				0AAABCB50868337D1A9E12724257B088 /* Support Files */,
+			);
+			name = RollView;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		10A38CD0A46E61672D0390EA53EC0B41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C990A0ED6F9F285D64C8C597BD2A83D /* Pooling.framework */,
+				4F762E9FCB1B19BCE250C077A0A8F22C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FF3393EB0091F0ABEBF667B7B511110 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0B272F44194ADE7DCDCCB610155A7962 /* Pods_Example_iOS.framework */,
+				F89CC8617E490DA6A4012C9135B09F9C /* Pods_RollView.framework */,
+				375A41C62A3404ABABC7E8C3F5A0B2AC /* Pooling.framework */,
+				E363747EA822F3FA7E8E2490216B6546 /* RollView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F762E9FCB1B19BCE250C077A0A8F22C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D8E63AAF479C377B99D2AB79F7715CC6 /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				975CB38EE2C0C37EE02F25298B571A0F /* Development Pods */,
+				10A38CD0A46E61672D0390EA53EC0B41 /* Frameworks */,
 				E96A3ACD73B3F128C55B503F937BD12C /* Pods */,
-				CD1882DD1E55832CDA9C35AFECCC7962 /* Products */,
-				CAF293156E95963958019111BE31F9D8 /* Targets Support Files */,
+				1FF3393EB0091F0ABEBF667B7B511110 /* Products */,
+				A10F8F2FE3BF7DB9439C07AE3D09FDEF /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		814F7CDDFA4D120CC51DB37C4B7F01EE /* Pods-Example-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				33F348AF72B76E95EA726F77B30D9508 /* Info.plist */,
+				D9578ABEE13081072A5E68D714239213 /* Pods-Example-iOS.modulemap */,
+				6BB4BB8928ED7D75B79721673252C2A6 /* Pods-Example-iOS-acknowledgements.markdown */,
+				8803A99EC4C3091536037C624664AB4A /* Pods-Example-iOS-acknowledgements.plist */,
+				F38CCD2D04D516722062E64B131C9814 /* Pods-Example-iOS-dummy.m */,
+				86B65D2B743AB403B6EE1D12A24D0C92 /* Pods-Example-iOS-frameworks.sh */,
+				A9AB17425A8570C60806DF6B734CF01A /* Pods-Example-iOS-resources.sh */,
+				E1FF3D9450510764D4197133CFB31ED3 /* Pods-Example-iOS-umbrella.h */,
+				40204BA1EE5C9BDEBA3DAB8AF2B1B41A /* Pods-Example-iOS.debug.xcconfig */,
+				5D7AF92D25DBF9FC28DBF8E072C27A77 /* Pods-Example-iOS.release.xcconfig */,
+			);
+			name = "Pods-Example-iOS";
+			path = "Target Support Files/Pods-Example-iOS";
 			sourceTree = "<group>";
 		};
 		89BAC5A54E83A6F1E261AAF91E8BE24D /* Pooling */ = {
@@ -113,37 +242,38 @@
 			path = Pooling;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		8C42E4F4C784D7B157D59516BC023B37 /* Pods-RollView */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				463D8A41D200BB7C9E6287EA58D3EFB0 /* Info.plist */,
+				623C6D9E53DA9E028F4F2DF96A9BB5FA /* Pods-RollView.modulemap */,
+				51BDDE282306FDC139926E9BD06F3F50 /* Pods-RollView-acknowledgements.markdown */,
+				4D343FE1EC53089BE43A221313BE3BCD /* Pods-RollView-acknowledgements.plist */,
+				747B0D16FF7CE7E497356511D0B91C41 /* Pods-RollView-dummy.m */,
+				DA187270F14A0DC914A8687BA642CCC9 /* Pods-RollView-resources.sh */,
+				19BCC2E5651BD0AFEBC43D3F2E1A8836 /* Pods-RollView-umbrella.h */,
+				0BC044A6D62AC5EBB07E8D3C7FA8ED44 /* Pods-RollView.debug.xcconfig */,
+				E0BB4388A0863B7C780CDCB0CB1DAF84 /* Pods-RollView.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = "Pods-RollView";
+			path = "Target Support Files/Pods-RollView";
 			sourceTree = "<group>";
 		};
-		CAF293156E95963958019111BE31F9D8 /* Targets Support Files */ = {
+		975CB38EE2C0C37EE02F25298B571A0F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4723C08F2767128435DF6B0637A1CC95 /* Pods-RollView */,
+				0ADC52B2494423D860B8148F3D38DC7B /* RollView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		A10F8F2FE3BF7DB9439C07AE3D09FDEF /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				814F7CDDFA4D120CC51DB37C4B7F01EE /* Pods-Example-iOS */,
+				8C42E4F4C784D7B157D59516BC023B37 /* Pods-RollView */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		CD1882DD1E55832CDA9C35AFECCC7962 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C0667A8C9CBCE285BBB93E67C82A5C4E /* Pods_RollView.framework */,
-				EF91015372547A2E39D5D49A4602FDDA /* Pooling.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		DAD5CC3D682CD5D45A76133491411476 /* Support Files */ = {
@@ -171,6 +301,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0638324AEDE652A6B08413D91D75457E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C393C39A6EC978CDEBDAE206E967CD6C /* Pods-Example-iOS-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D646A67CB388683FACF2A30C15A602C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5279FFAC48285F51AD44D7F73F65DC9C /* RollView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B9FC0A88F2D5BD43824BC416B0E1EA11 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,24 +325,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F0EEEC655B5B5098AEAC29DE24D584FF /* Headers */ = {
+		BEEAD9C1921F193E8B07EA24BF9C5C79 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1AFC0A48E5E37F028CB9546E8E77723 /* Pooling-umbrella.h in Headers */,
+				D504193E6E8CFFA91239CA3744BA45AC /* Pooling-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		56547D8DE4D1AB4AEA52A66EFAF48383 /* Pooling */ = {
+		4EA3C1BF3A44AE7E2E6A1B10B01C3130 /* Pods-Example-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2E0B32F33201637FE2FE9A323A807789 /* Build configuration list for PBXNativeTarget "Pooling" */;
+			buildConfigurationList = 006A139223CD361D1EA92154B21BD720 /* Build configuration list for PBXNativeTarget "Pods-Example-iOS" */;
 			buildPhases = (
-				C2438295D35C8AA4BFC35E9EDE5A824F /* Sources */,
-				E70E3E74B2B7164A5BF1B8F1845A5126 /* Frameworks */,
-				F0EEEC655B5B5098AEAC29DE24D584FF /* Headers */,
+				A4162BC6543E2826A7E91479C1574E87 /* Sources */,
+				CA121C013AA72128F4A525922CB31364 /* Frameworks */,
+				0638324AEDE652A6B08413D91D75457E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372479C0C20C8C0356C973EAD0F4AB51 /* PBXTargetDependency */,
+				C3D0B4306500B4D015449DDDA9FCAD13 /* PBXTargetDependency */,
+			);
+			name = "Pods-Example-iOS";
+			productName = "Pods-Example-iOS";
+			productReference = 0B272F44194ADE7DCDCCB610155A7962 /* Pods_Example_iOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60C0218C072DAC4D31973C94E7133546 /* RollView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 76C18E56D381123C78071F758FC220B2 /* Build configuration list for PBXNativeTarget "RollView" */;
+			buildPhases = (
+				DC215C861EFFBC558BE23AE04F161795 /* Sources */,
+				F2F1EC6EB70E62EF9BD74469F6093131 /* Frameworks */,
+				9D646A67CB388683FACF2A30C15A602C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADA13946F630454CBEC9D717DC6A5AE8 /* PBXTargetDependency */,
+			);
+			name = RollView;
+			productName = RollView;
+			productReference = E363747EA822F3FA7E8E2490216B6546 /* RollView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B686D9254FF09A107AF3D75B65566E64 /* Pooling */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93B45105FB31D944832A79EF8913435E /* Build configuration list for PBXNativeTarget "Pooling" */;
+			buildPhases = (
+				46C0BAC9AF8C5CA20D63A478E00DFE1B /* Sources */,
+				2CFAFE6FE81D3CE7E4BD968DD0FD477D /* Frameworks */,
+				BEEAD9C1921F193E8B07EA24BF9C5C79 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -204,7 +387,7 @@
 			);
 			name = Pooling;
 			productName = Pooling;
-			productReference = EF91015372547A2E39D5D49A4602FDDA /* Pooling.framework */;
+			productReference = 375A41C62A3404ABABC7E8C3F5A0B2AC /* Pooling.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		BC9C7A21D4EE77ED9029A709DFFB94F3 /* Pods-RollView */ = {
@@ -222,7 +405,7 @@
 			);
 			name = "Pods-RollView";
 			productName = "Pods-RollView";
-			productReference = C0667A8C9CBCE285BBB93E67C82A5C4E /* Pods_RollView.framework */;
+			productReference = F89CC8617E490DA6A4012C9135B09F9C /* Pods_RollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -242,17 +425,30 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CD1882DD1E55832CDA9C35AFECCC7962 /* Products */;
+			productRefGroup = 1FF3393EB0091F0ABEBF667B7B511110 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				4EA3C1BF3A44AE7E2E6A1B10B01C3130 /* Pods-Example-iOS */,
 				BC9C7A21D4EE77ED9029A709DFFB94F3 /* Pods-RollView */,
-				56547D8DE4D1AB4AEA52A66EFAF48383 /* Pooling */,
+				B686D9254FF09A107AF3D75B65566E64 /* Pooling */,
+				60C0218C072DAC4D31973C94E7133546 /* RollView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		46C0BAC9AF8C5CA20D63A478E00DFE1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F196DE72233718901F5C9FC1070BE363 /* Pool.swift in Sources */,
+				6EB9C34FB5AAEB1D083702534FF1C01E /* Pooling-dummy.m in Sources */,
+				2D8AA4CE819C03017E40D2534161ADE4 /* Pooling.swift in Sources */,
+				C7999F411B13869C06BF9B6BBA4B24CF /* PThreadMutex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		815DB60271CAC2287C14E1D10171C3A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,32 +457,59 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C2438295D35C8AA4BFC35E9EDE5A824F /* Sources */ = {
+		A4162BC6543E2826A7E91479C1574E87 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B054F7F1F5372E87D3BCCBD87DF1334 /* Pool.swift in Sources */,
-				8B6993806ACF4D884845196BC6CDBA10 /* Pooling-dummy.m in Sources */,
-				CD8F264D25ABE7481BA8E8B87A76C162 /* Pooling.swift in Sources */,
-				9E0A500C826D799071324837BE5EDC0A /* PThreadMutex.swift in Sources */,
+				A067F63082C46CD6C5B950784F3F4C41 /* Pods-Example-iOS-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC215C861EFFBC558BE23AE04F161795 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				265D80363A1FAE61BF64A20526E0E2DC /* Adapter.swift in Sources */,
+				95F2BCCD700096A0F6F63C98A971E932 /* AdapterView.swift in Sources */,
+				7B23C7EE8C6DE38728A258AAB9C08427 /* ContainerView.swift in Sources */,
+				50D5028D0A9F6B19ADCB39BF7FF715DA /* RollView-dummy.m in Sources */,
+				D5A212C54AE798C479AB9E131016B1A5 /* RollView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		372479C0C20C8C0356C973EAD0F4AB51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pooling;
+			target = B686D9254FF09A107AF3D75B65566E64 /* Pooling */;
+			targetProxy = 9A5D3CE2C50532D305E9A2DB5218308D /* PBXContainerItemProxy */;
+		};
+		ADA13946F630454CBEC9D717DC6A5AE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Pooling;
+			target = B686D9254FF09A107AF3D75B65566E64 /* Pooling */;
+			targetProxy = 5A939E835CCACFB90729835152CDD955 /* PBXContainerItemProxy */;
+		};
 		ADFDDC804F438EEAF6C3FF55167C1A29 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Pooling;
-			target = 56547D8DE4D1AB4AEA52A66EFAF48383 /* Pooling */;
+			target = B686D9254FF09A107AF3D75B65566E64 /* Pooling */;
 			targetProxy = 2925BCC9A81F7C8075911B675EAEB519 /* PBXContainerItemProxy */;
+		};
+		C3D0B4306500B4D015449DDDA9FCAD13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RollView;
+			target = 60C0218C072DAC4D31973C94E7133546 /* RollView */;
+			targetProxy = E17FEC5D46C1BF9582EE1482C06A5A0D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		290D957CB948B2569E5F2EBB8EF5A8CE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA263DB2626E0B21D0B98825B9B352AE /* Pods-RollView.release.xcconfig */;
+			baseConfigurationReference = E0BB4388A0863B7C780CDCB0CB1DAF84 /* Pods-RollView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -311,6 +534,69 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5A9D42BAAAA64CF95E966ABA50BE76DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE085DCA49CCCA5734DC937DD93CA0E4 /* Pooling.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pooling/Pooling-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pooling/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pooling/Pooling.modulemap";
+				PRODUCT_NAME = Pooling;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5FD271CD34D3474ADFEBB726476534A8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9708C7390BF58D73B6EAD0DD15756B6C /* RollView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RollView/RollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RollView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RollView/RollView.modulemap";
+				PRODUCT_NAME = RollView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -373,9 +659,9 @@
 			};
 			name = Release;
 		};
-		8AEDD3B7BF1FDB3865DE5EE54F2D1181 /* Release */ = {
+		8BCA6D8639246A90BDF5B7F6DC926463 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE085DCA49CCCA5734DC937DD93CA0E4 /* Pooling.xcconfig */;
+			baseConfigurationReference = 5D7AF92D25DBF9FC28DBF8E072C27A77 /* Pods-Example-iOS.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -386,18 +672,20 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pooling/Pooling-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pooling/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pooling/Pooling.modulemap";
-				PRODUCT_NAME = Pooling;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example-iOS/Pods-Example-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Example_iOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -407,7 +695,7 @@
 		};
 		96AFDBD5E32D2A83C28D8D6C954197D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3351699A4506F9059B5CA336AB14F565 /* Pods-RollView.debug.xcconfig */;
+			baseConfigurationReference = 0BC044A6D62AC5EBB07E8D3C7FA8ED44 /* Pods-RollView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -439,9 +727,9 @@
 			};
 			name = Debug;
 		};
-		9B9148CBAE7C6D0CC6C1B55C6B1A1362 /* Debug */ = {
+		B23DF03E70FCA54CA2AE127706CCCDDF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE085DCA49CCCA5734DC937DD93CA0E4 /* Pooling.xcconfig */;
+			baseConfigurationReference = 9708C7390BF58D73B6EAD0DD15756B6C /* RollView.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -452,13 +740,13 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Pooling/Pooling-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pooling/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/RollView/RollView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RollView/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pooling/Pooling.modulemap";
-				PRODUCT_NAME = Pooling;
+				MODULEMAP_FILE = "Target Support Files/RollView/RollView.modulemap";
+				PRODUCT_NAME = RollView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -530,9 +818,84 @@
 			};
 			name = Debug;
 		};
+		CBC808C9CB773F5E87B715CEB29EBF21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40204BA1EE5C9BDEBA3DAB8AF2B1B41A /* Pods-Example-iOS.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Example-iOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Example-iOS/Pods-Example-iOS.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Example_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F82F0D048798B9E47BE3D0D54708C4F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE085DCA49CCCA5734DC937DD93CA0E4 /* Pooling.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Pooling/Pooling-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pooling/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pooling/Pooling.modulemap";
+				PRODUCT_NAME = Pooling;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		006A139223CD361D1EA92154B21BD720 /* Build configuration list for PBXNativeTarget "Pods-Example-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBC808C9CB773F5E87B715CEB29EBF21 /* Debug */,
+				8BCA6D8639246A90BDF5B7F6DC926463 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -542,11 +905,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2E0B32F33201637FE2FE9A323A807789 /* Build configuration list for PBXNativeTarget "Pooling" */ = {
+		76C18E56D381123C78071F758FC220B2 /* Build configuration list for PBXNativeTarget "RollView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9B9148CBAE7C6D0CC6C1B55C6B1A1362 /* Debug */,
-				8AEDD3B7BF1FDB3865DE5EE54F2D1181 /* Release */,
+				B23DF03E70FCA54CA2AE127706CCCDDF /* Debug */,
+				5FD271CD34D3474ADFEBB726476534A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93B45105FB31D944832A79EF8913435E /* Build configuration list for PBXNativeTarget "Pooling" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5A9D42BAAAA64CF95E966ABA50BE76DF /* Debug */,
+				F82F0D048798B9E47BE3D0D54708C4F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
