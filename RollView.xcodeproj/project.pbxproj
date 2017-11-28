@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		RollView::RollViewPackageTests::ProductTarget /* RollViewPackageTests */ = {
+		"RollView::RollViewPackageTests::ProductTarget" /* RollViewPackageTests */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = OBJ_39 /* Build configuration list for PBXAggregateTarget "RollViewPackageTests" */;
 			buildPhases = (
@@ -34,7 +34,7 @@
 		9BC2105F93438223ED6F3A8A /* Pods_Example_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A00F3BCA4BB7391B394D5E11 /* Pods_Example_iOS.framework */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_27 /* RollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RollViewTests.swift */; };
-		OBJ_29 /* RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = RollView::RollView::Product /* RollView.framework */; };
+		OBJ_29 /* RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RollView::RollView::Product" /* RollView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,8 +75,8 @@
 		F4986286D8AE151DDE9CB5CB /* Pods-Example-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example-iOS/Pods-Example-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		OBJ_12 /* RollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		RollView::RollView::Product /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		RollView::RollViewTests::Product /* RollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		"RollView::RollView::Product" /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"RollView::RollViewTests::Product" /* RollViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RollViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,8 +167,8 @@
 		OBJ_13 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				RollView::RollViewTests::Product /* RollViewTests.xctest */,
-				RollView::RollView::Product /* RollView.framework */,
+				"RollView::RollViewTests::Product" /* RollViewTests.xctest */,
+				"RollView::RollView::Product" /* RollView.framework */,
 				0A988D741FCD4FE4008DE16F /* Example-iOS.app */,
 			);
 			name = Products;
@@ -231,7 +231,7 @@
 			productReference = 0A988D741FCD4FE4008DE16F /* Example-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		RollView::RollView /* RollView */ = {
+		"RollView::RollView" /* RollView */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "RollView" */;
 			buildPhases = (
@@ -246,10 +246,10 @@
 			);
 			name = RollView;
 			productName = RollView;
-			productReference = RollView::RollView::Product /* RollView.framework */;
+			productReference = "RollView::RollView::Product" /* RollView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		RollView::RollViewTests /* RollViewTests */ = {
+		"RollView::RollViewTests" /* RollViewTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_23 /* Build configuration list for PBXNativeTarget "RollViewTests" */;
 			buildPhases = (
@@ -263,10 +263,10 @@
 			);
 			name = RollViewTests;
 			productName = RollViewTests;
-			productReference = RollView::RollViewTests::Product /* RollViewTests.xctest */;
+			productReference = "RollView::RollViewTests::Product" /* RollViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		RollView::SwiftPMPackageDescription /* RollViewPackageDescription */ = {
+		"RollView::SwiftPMPackageDescription" /* RollViewPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_17 /* Build configuration list for PBXNativeTarget "RollViewPackageDescription" */;
 			buildPhases = (
@@ -312,10 +312,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				RollView::SwiftPMPackageDescription /* RollViewPackageDescription */,
-				RollView::RollViewTests /* RollViewTests */,
-				RollView::RollView /* RollView */,
-				RollView::RollViewPackageTests::ProductTarget /* RollViewPackageTests */,
+				"RollView::SwiftPMPackageDescription" /* RollViewPackageDescription */,
+				"RollView::RollViewTests" /* RollViewTests */,
+				"RollView::RollView" /* RollView */,
+				"RollView::RollViewPackageTests::ProductTarget" /* RollViewPackageTests */,
 				0A988D731FCD4FE4008DE16F /* Example-iOS */,
 			);
 		};
@@ -465,12 +465,12 @@
 /* Begin PBXTargetDependency section */
 		OBJ_30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = RollView::RollView /* RollView */;
+			target = "RollView::RollView" /* RollView */;
 			targetProxy = 0ADC5CFF1FCD4B04004ADD7B /* PBXContainerItemProxy */;
 		};
 		OBJ_42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = RollView::RollViewTests /* RollViewTests */;
+			target = "RollView::RollViewTests" /* RollViewTests */;
 			targetProxy = 0ADC5D001FCD4B05004ADD7B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -699,6 +699,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					Carthage/Build/iOS,
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RollView.xcodeproj/RollView_Info.plist;
@@ -725,6 +726,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+					Carthage/Build/iOS,
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = RollView.xcodeproj/RollView_Info.plist;
