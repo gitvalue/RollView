@@ -26,22 +26,173 @@ import Pooling
  
  - author: gitvalue
  */
-public class RollView: UIView, AdapterView {
+public class RollView: UIView, AdapterView, UIScrollViewDelegate {
     private let scrollViewContentSizeKeyPath = "contentSize"
     
     @IBOutlet private var scrollView: UIScrollView!
     @IBOutlet private var stackView: UIStackView!
     
     /**
-     Словарь пулов, используемых для переиспользования представлений, лежащих
-     на ListView
+     Dictionary of pools, used to reuse RollView child views
      */
     private var pools: [String: Pool<UIView>]!
     
     /**
-     Флаг, определяющий, заполняется ли список снизу вверх или сверху вниз
+     Defines if roll fills from top to bottom, or from bottom to top
      */
     public var bottomToTopFillEnabled: Bool!
     
     public var adapter: Adapter!
+    
+    /**
+     List of containers, that hold views
+     */
+    var views: [ContainerView] {
+        return stackView.arrangedSubviews as! [ContainerView]
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        
+        configure()
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        
+        configure()
+    }
+    
+    deinit {
+        scrollView.removeObserver(self, forKeyPath: scrollViewContentSizeKeyPath)
+    }
+    
+    /**
+     Configures the view
+     */
+    private func configure() {
+        pools = [:]
+        
+        let contentView = Bundle.main.loadNibNamed("RollView", owner: self, options: nil)?.last as! UIView
+        contentView.frame = bounds
+        contentView.autoresizingMask = [ .flexibleWidth, .flexibleHeight ]
+        
+        addSubview(contentView)
+        
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.axis = .vertical
+        
+        scrollView.addObserver(self, forKeyPath: scrollViewContentSizeKeyPath, options: [ .new ], context: nil)
+        
+        scrollView.delegate = self
+    }
+    
+    /**
+     Rebuilds RollView
+     */
+    public func reload() {
+        clear()
+        
+        for i in 0..<adapter.count {
+            let viewType = adapter.viewType(forPosition: i)
+            let pool = getPool(for: viewType)
+            let container = ContainerView()
+            
+            container.fill(withView: adapter.view(forPosition: i, convertView: pool.borrow()))
+            
+            stackView.addArrangedSubview(container)
+        }
+    }
+    
+    /**
+     Clears RollView
+     */
+    public func clear() {
+        for container in views {
+            if let view = container.clear() {
+                getPool(for: type(of: view)).recall(view)
+            }
+            
+            stackView.removeArrangedSubview(container)
+        }
+    }
+    
+    /**
+     Creates pool for a particular view type if it doesn't already exist, or
+     returns existing otherwise
+     
+     - parameters:
+        - viewType: type of view
+     
+     - returns: pool
+     */
+    private func getPool(for viewType: UIView.Type) -> Pool<UIView> {
+        let viewTypeDesc = String(describing: viewType)
+        
+        if pools[viewTypeDesc] == nil {
+            pools[viewTypeDesc] = Pool<UIView>(size: 50) {
+                return viewType.init(frame: CGRect.zero)
+            }
+        }
+        
+        return pools[viewTypeDesc]!
+    }
+    
+    /**
+     Refills container if necessary
+     
+     - parameters:
+        - position: container position
+     */
+    private func refreshContainer(atPosition position: Int) {
+        let container = views[position]
+        
+        if container.containedView == nil {
+            let viewTypeDesc = String(describing: adapter.viewType(forPosition: position))
+            let convertView = pools[viewTypeDesc]!.borrow()
+            container.fill(withView: adapter.view(forPosition: position, convertView: convertView))
+        }
+    }
+    
+    /**
+     Clears container if necessary
+     
+     - parameters:
+        - container: container to clean
+     */
+    private func clearContainer(_ container: ContainerView) {
+        if let view = container.clear() {
+            let viewTypeDesc = String(describing: type(of: view))
+            pools[viewTypeDesc]!.recall(view)
+        }
+    }
+    
+    override public func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if let observedScrollView = object as? UIScrollView, observedScrollView === scrollView, keyPath == scrollViewContentSizeKeyPath {
+            onScrollViewContentSizeChange()
+        }
+    }
+    
+    /**
+     Scroll content height change handler
+     */
+    private func onScrollViewContentSizeChange() {
+        if bottomToTopFillEnabled == true {
+            let gapHeight = scrollView.frame.size.height - scrollView.contentSize.height
+            
+            scrollView.contentInset.top = gapHeight < 0.0 ? 0.0 : gapHeight
+        }
+    }
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        for i in 0..<views.count {
+            if scrollView.bounds.intersects(views[i].frame) {
+                refreshContainer(atPosition: i)
+            }
+            else {
+                clearContainer(views[i])
+            }
+        }
+    }
 }
