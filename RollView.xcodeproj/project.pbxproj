@@ -29,6 +29,8 @@
 		0A988D871FCD527F008DE16F /* RollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D861FCD527F008DE16F /* RollView.swift */; };
 		0A988D891FCD5291008DE16F /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D881FCD5291008DE16F /* Adapter.swift */; };
 		0A988D8B1FCD5531008DE16F /* AdapterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D8A1FCD5531008DE16F /* AdapterView.swift */; };
+		0AE12B451FCD5F7B00AF8AAB /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE12B441FCD5F7B00AF8AAB /* ContainerView.swift */; };
+		489FF5A35BD6B60D0AC8C166 /* Pods_RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F9785B9FBD986D6DAD8588 /* Pods_RollView.framework */; };
 		OBJ_21 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_27 /* RollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* RollViewTests.swift */; };
 		OBJ_29 /* RollView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RollView::RollView::Product" /* RollView.framework */; };
@@ -52,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		020032995E35385177BD5E94 /* Pods-RollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RollView/Pods-RollView.debug.xcconfig"; sourceTree = "<group>"; };
 		0A988D741FCD4FE4008DE16F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A988D761FCD4FE4008DE16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A988D781FCD4FE4008DE16F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +66,9 @@
 		0A988D881FCD5291008DE16F /* Adapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		0A988D8A1FCD5531008DE16F /* AdapterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterView.swift; sourceTree = "<group>"; };
 		0A988D8C1FCD570D008DE16F /* RollView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RollView.xib; sourceTree = "<group>"; };
+		0AE12B441FCD5F7B00AF8AAB /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		75F9785B9FBD986D6DAD8588 /* Pods_RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E57C08C0135B35B2326DF6B /* Pods-RollView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RollView.release.xcconfig"; path = "Pods/Target Support Files/Pods-RollView/Pods-RollView.release.xcconfig"; sourceTree = "<group>"; };
 		OBJ_12 /* RollViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollViewTests.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		"RollView::RollView::Product" /* RollView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RollView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +77,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		0A988D711FCD4FE4008DE16F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30A22EBD23596E61393FF180 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -89,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
+				489FF5A35BD6B60D0AC8C166 /* Pods_RollView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +120,23 @@
 				0A988D821FCD4FE4008DE16F /* Info.plist */,
 			);
 			path = "Example-iOS";
+			sourceTree = "<group>";
+		};
+		E29E4CA758804CD53AB98BF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				020032995E35385177BD5E94 /* Pods-RollView.debug.xcconfig */,
+				7E57C08C0135B35B2326DF6B /* Pods-RollView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EE6650515B7C04EF52517DAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F9785B9FBD986D6DAD8588 /* Pods_RollView.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -143,6 +174,8 @@
 				OBJ_10 /* Tests */,
 				0A988D751FCD4FE4008DE16F /* Example-iOS */,
 				OBJ_13 /* Products */,
+				E29E4CA758804CD53AB98BF5 /* Pods */,
+				EE6650515B7C04EF52517DAB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -161,6 +194,7 @@
 				0A988D8A1FCD5531008DE16F /* AdapterView.swift */,
 				0A988D861FCD527F008DE16F /* RollView.swift */,
 				0A988D8C1FCD570D008DE16F /* RollView.xib */,
+				0AE12B441FCD5F7B00AF8AAB /* ContainerView.swift */,
 			);
 			name = RollView;
 			path = Sources/RollView;
@@ -190,8 +224,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_32 /* Build configuration list for PBXNativeTarget "RollView" */;
 			buildPhases = (
+				014D25BD41984135C3DF7932 /* [CP] Check Pods Manifest.lock */,
 				OBJ_35 /* Sources */,
 				OBJ_37 /* Frameworks */,
+				D42593AF439FE0AC8C0606D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,6 +260,7 @@
 			buildConfigurationList = OBJ_17 /* Build configuration list for PBXNativeTarget "RollViewPackageDescription" */;
 			buildPhases = (
 				OBJ_20 /* Sources */,
+				30A22EBD23596E61393FF180 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -286,6 +323,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		014D25BD41984135C3DF7932 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RollView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D42593AF439FE0AC8C0606D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RollView/Pods-RollView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A988D701FCD4FE4008DE16F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -316,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				0AE12B451FCD5F7B00AF8AAB /* ContainerView.swift in Sources */,
 				0A988D871FCD527F008DE16F /* RollView.swift in Sources */,
 				0A988D891FCD5291008DE16F /* Adapter.swift in Sources */,
 				0A988D8B1FCD5531008DE16F /* AdapterView.swift in Sources */,
@@ -551,6 +625,7 @@
 		};
 		OBJ_33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 020032995E35385177BD5E94 /* Pods-RollView.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
@@ -576,6 +651,7 @@
 		};
 		OBJ_34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E57C08C0135B35B2326DF6B /* Pods-RollView.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;

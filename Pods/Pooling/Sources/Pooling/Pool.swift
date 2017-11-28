@@ -1,8 +1,8 @@
 //
-//  RollView.swift
-//  RollView
+//  Pool.swift
+//  Pooling
 //
-//  Created by Dmitry Volosach on 28.11.2017
+//  Created by Dmitry Volosach on 22.11.2017
 //  Copyright © 2017 Dmitry Volosach. All rights reserved.
 //
 //  Permission to use, copy, modify, and/or distribute this software for any
@@ -16,32 +16,51 @@
 //  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
 //  IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+//
 
-import UIKit
-import Pooling
+import Foundation
 
 /**
- Renders vertically scrolling collection of views, where each
- view lays right below previous one from list.
+ Objects pool
  
  - author: gitvalue
  */
-public class RollView: UIView, AdapterView {
-    private let scrollViewContentSizeKeyPath = "contentSize"
-    
-    @IBOutlet private var scrollView: UIScrollView!
-    @IBOutlet private var stackView: UIStackView!
+public class Pool<U>: Pooling {
+    public typealias T = U
     
     /**
-     Словарь пулов, используемых для переиспользования представлений, лежащих
-     на ListView
+     Thread synchronization object
      */
-    private var pools: [String: Pool<UIView>]!
+    private let mutex = PThreadMutex()
     
     /**
-     Флаг, определяющий, заполняется ли список снизу вверх или сверху вниз
+     Objects list
      */
-    public var bottomToTopFillEnabled: Bool!
+    private var pool: [T]!
     
-    public var adapter: Adapter!
+    /**
+     Objects 'creator' closure
+     */
+    private var creator: (() -> U)!
+    
+    required public init(size: Int, creator: @escaping () -> U) {
+        pool = []
+        self.creator = creator
+        
+        for _ in 0..<size {
+            pool.append(creator())
+        }
+    }
+    
+    public func borrow() -> U {
+        return mutex.sync {
+            return (0 < pool.count ? pool.popLast() : creator())!
+        }
+    }
+
+    public func recall(_ object: U) {
+        mutex.sync {
+            pool.append(object)
+        }
+    }
 }

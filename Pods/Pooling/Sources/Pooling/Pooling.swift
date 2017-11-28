@@ -1,8 +1,8 @@
 //
-//  RollView.swift
-//  RollView
+//  Pooling.swift
+//  Pooling
 //
-//  Created by Dmitry Volosach on 28.11.2017
+//  Created by Dmitry Volosach on 22.11.2017
 //  Copyright © 2017 Dmitry Volosach. All rights reserved.
 //
 //  Permission to use, copy, modify, and/or distribute this software for any
@@ -16,32 +16,32 @@
 //  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
 //  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
 //  IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+//
 
-import UIKit
-import Pooling
+import Foundation
 
 /**
- Renders vertically scrolling collection of views, where each
- view lays right below previous one from list.
+ Provides an interface for classes that intent to function as a pool
  
  - author: gitvalue
  */
-public class RollView: UIView, AdapterView {
-    private let scrollViewContentSizeKeyPath = "contentSize"
+public protocol Pooling {
+    associatedtype T
     
-    @IBOutlet private var scrollView: UIScrollView!
-    @IBOutlet private var stackView: UIStackView!
-    
-    /**
-     Словарь пулов, используемых для переиспользования представлений, лежащих
-     на ListView
-     */
-    private var pools: [String: Pool<UIView>]!
+    init(size: Int, creator: @escaping () -> T)
     
     /**
-     Флаг, определяющий, заполняется ли список снизу вверх или сверху вниз
+     Gets object from pool
+     
+     - returns: T-typed object
      */
-    public var bottomToTopFillEnabled: Bool!
+    func borrow() -> T
     
-    public var adapter: Adapter!
+    /**
+     Returns object back to pool
+     
+     - parameters:
+        - object: previously stored in that pool object of type T
+     */
+    func recall(_ object: T)
 }

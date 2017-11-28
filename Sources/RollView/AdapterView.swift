@@ -1,6 +1,6 @@
 //
 //  AdapterView.swift
-//  Adapter
+//  RollView
 //
 //  Created by Dmitry Volosach on 28.11.2017
 //  Copyright © 2017 Dmitry Volosach. All rights reserved.
