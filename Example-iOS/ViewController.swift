@@ -9,7 +9,6 @@ import UIKit
 import RollView
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
