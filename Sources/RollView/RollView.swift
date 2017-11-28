@@ -1,3 +1,1 @@
-struct RollView {
-    var text = "Hello, World!"
-}
+import Foundation
