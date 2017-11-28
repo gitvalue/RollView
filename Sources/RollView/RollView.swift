@@ -25,7 +25,12 @@ import UIKit
  
  - author: gitvalue
  */
-class RollView: UIView, AdapterView {
-    var adapter: Adapter!
+public class RollView: UIView, AdapterView {
+    private let scrollViewContentSizeKeyPath = "contentSize"
+    
+    @IBOutlet private var scrollView: UIScrollView!
+    @IBOutlet private var stackView: UIStackView!
+    
+    public var adapter: Adapter!
     
 }
