@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RollView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "RollView is an iOS implementation of ListView on Android"
 
   # This description is used to generate tags and improve search results.
