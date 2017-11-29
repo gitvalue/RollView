@@ -21,6 +21,10 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0A9386BB1FCE94F000E44168 /* RollView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A988D8C1FCD570D008DE16F /* RollView.xib */; };
+		0A9386BD1FCE981B00E44168 /* ProductsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9386BC1FCE981B00E44168 /* ProductsAdapter.swift */; };
+		0A9386BF1FCE989500E44168 /* ProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9386BE1FCE989500E44168 /* ProductView.swift */; };
+		0A9386C11FCE98E100E44168 /* ProductView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A9386C01FCE98E100E44168 /* ProductView.xib */; };
 		0A988D771FCD4FE4008DE16F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D761FCD4FE4008DE16F /* AppDelegate.swift */; };
 		0A988D791FCD4FE4008DE16F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A988D781FCD4FE4008DE16F /* ViewController.swift */; };
 		0A988D7C1FCD4FE4008DE16F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A988D7A1FCD4FE4008DE16F /* Main.storyboard */; };
@@ -56,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		020032995E35385177BD5E94 /* Pods-RollView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RollView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RollView/Pods-RollView.debug.xcconfig"; sourceTree = "<group>"; };
+		0A9386BC1FCE981B00E44168 /* ProductsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAdapter.swift; sourceTree = "<group>"; };
+		0A9386BE1FCE989500E44168 /* ProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductView.swift; sourceTree = "<group>"; };
+		0A9386C01FCE98E100E44168 /* ProductView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductView.xib; sourceTree = "<group>"; };
 		0A988D741FCD4FE4008DE16F /* Example-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A988D761FCD4FE4008DE16F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A988D781FCD4FE4008DE16F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -123,6 +130,9 @@
 				0A988D7D1FCD4FE4008DE16F /* Assets.xcassets */,
 				0A988D7F1FCD4FE4008DE16F /* LaunchScreen.storyboard */,
 				0A988D821FCD4FE4008DE16F /* Info.plist */,
+				0A9386BC1FCE981B00E44168 /* ProductsAdapter.swift */,
+				0A9386BE1FCE989500E44168 /* ProductView.swift */,
+				0A9386C01FCE98E100E44168 /* ProductView.xib */,
 			);
 			path = "Example-iOS";
 			sourceTree = "<group>";
@@ -326,8 +336,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9386BB1FCE94F000E44168 /* RollView.xib in Resources */,
 				0A988D811FCD4FE4008DE16F /* LaunchScreen.storyboard in Resources */,
 				0A988D7E1FCD4FE4008DE16F /* Assets.xcassets in Resources */,
+				0A9386C11FCE98E100E44168 /* ProductView.xib in Resources */,
 				0A988D7C1FCD4FE4008DE16F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +440,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9386BF1FCE989500E44168 /* ProductView.swift in Sources */,
+				0A9386BD1FCE981B00E44168 /* ProductsAdapter.swift in Sources */,
 				0A988D791FCD4FE4008DE16F /* ViewController.swift in Sources */,
 				0A988D771FCD4FE4008DE16F /* AppDelegate.swift in Sources */,
 			);
