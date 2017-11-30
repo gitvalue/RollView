@@ -20,6 +20,7 @@
 import UIKit
 
 /**
+ Serves as a container for custom view that is added to RollView
  
  - author: gitvalue
  */
