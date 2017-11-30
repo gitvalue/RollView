@@ -73,7 +73,9 @@ public class RollView: UIView, AdapterView, UIScrollViewDelegate {
     private func configure() {
         pools = [:]
         
-        let contentView = Bundle.main.loadNibNamed("RollView", owner: self, options: nil)?.last as! UIView
+        let bundle = Bundle(for: RollView.self)
+        let contentView = bundle.loadNibNamed("RollView", owner: self, options: nil)?.last as! UIView
+        
         contentView.frame = bounds
         contentView.autoresizingMask = [ .flexibleWidth, .flexibleHeight ]
         
