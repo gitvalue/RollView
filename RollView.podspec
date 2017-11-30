@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "RollView"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "RollView is an iOS implementation of ListView on Android"
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
+  s.resources = "Sources/**/*.{xib}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
