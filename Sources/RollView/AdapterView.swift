@@ -25,5 +25,5 @@ import Foundation
  - author: gitvalue
  */
 public protocol AdapterView {
-    var adapter: Adapter! { get set }
+    var adapter: Adapter? { get set }
 }

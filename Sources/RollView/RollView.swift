@@ -42,7 +42,7 @@ public class RollView: UIView, AdapterView, UIScrollViewDelegate {
      */
     public var bottomToTopFillEnabled: Bool!
     
-    public var adapter: Adapter!
+    public var adapter: Adapter?
     
     /**
      List of containers, that hold views
@@ -94,14 +94,16 @@ public class RollView: UIView, AdapterView, UIScrollViewDelegate {
      Rebuilds RollView
      */
     public func reload() {
+        guard let viewAdapter = adapter else { return }
+        
         clear()
         
-        for i in 0..<adapter.count {
-            let viewType = adapter.viewType(forPosition: i)
+        for i in 0..<viewAdapter.count {
+            let viewType = viewAdapter.viewType(forPosition: i)
             let pool = getPool(for: viewType)
             let container = ContainerView()
             
-            container.fill(withView: adapter.view(forPosition: i, convertView: pool.borrow()))
+            container.fill(withView: viewAdapter.view(forPosition: i, convertView: pool.borrow()))
             
             stackView.addArrangedSubview(container)
         }
@@ -148,12 +150,14 @@ public class RollView: UIView, AdapterView, UIScrollViewDelegate {
         - position: container position
      */
     private func refreshContainer(atPosition position: Int) {
+        guard let viewAdapter = adapter else { return }
+        
         let container = views[position]
         
         if container.containedView == nil {
-            let viewTypeDesc = String(describing: adapter.viewType(forPosition: position))
+            let viewTypeDesc = String(describing: viewAdapter.viewType(forPosition: position))
             let convertView = pools[viewTypeDesc]!.borrow()
-            container.fill(withView: adapter.view(forPosition: position, convertView: convertView))
+            container.fill(withView: viewAdapter.view(forPosition: position, convertView: convertView))
         }
     }
     
